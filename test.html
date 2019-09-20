@@ -1,0 +1,81 @@
+ <!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>test</title>
+			<meta content="width=device-width,initial-scale=1" name="viewport">
+				<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+				<script src="js/jquery.min.js"></script>
+				<script>
+					$(document).ready(function() {   
+			            var sideslider = $('[data-toggle=collapse-side]');
+			            var sel = sideslider.attr('data-target');
+			            var sel2 = sideslider.attr('data-target-2');
+			            sideslider.click(function(event){
+			                $(sel).toggleClass('in');
+			                $(sel2).toggleClass('out');
+			            });
+			        });
+				</script>
+				<style type="text/css">
+					body {
+				          padding-top: 50px;
+				          position: relative;
+				      }
+				      
+				      pre {
+				          tab-size: 8;
+				      }
+					      
+					      @media screen and (max-width: 768px) {
+					          .side-collapse-container{
+					              width:100%;
+					              position:relative;
+					              left:0;
+					              transition:left .4s;
+					          }
+					          .side-collapse-container.out{
+					              left:200px;
+					          }
+					          .side-collapse {
+					              top:50px;
+					              bottom:0;
+					              left:0;
+					              width:200px;
+					              position:fixed;
+					              overflow:hidden;
+					              transition:width .4s;
+					          }
+					          .side-collapse.in {
+					              width:0;
+					          }
+					      }
+				</style>
+		</head>
+		<body>
+
+			<header role="banner" class="navbar navbar-fixed-top navbar-inverse">
+			      <div class="container">
+			        <div class="navbar-header">
+			          <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left">
+			              <span class="icon-bar"></span>
+			              <span class="icon-bar"></span>
+			              <span class="icon-bar"></span>
+			           </button>
+			        </div>
+			        <div class="navbar-inverse side-collapse in">
+
+			        </div>
+			      </div>
+			    </header>
+			    <div class="container side-collapse-container">
+			      <div class="row">
+			        <h1>Hello</h1>
+			        <p>This is a side opening nav demonstration</p>
+			        <p>Make your browser smaller and the top menu wil become into a lateral slider menu</p>
+			      </div>
+			    </div>
+		</body>
+	</html> 
+	
+<script src="js/bootstrap.min.js"></script>

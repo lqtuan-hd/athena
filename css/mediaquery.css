@@ -1,0 +1,60 @@
+@media (min-width: 768px) and (max-width: 992px){
+	.text-sv{
+		display: none;
+	}
+	.text-sv2 {
+		display: none;
+	}
+	.sp{
+
+	        padding-bottom: none;
+	}
+	.none-border {
+	border-right: 10px solid #f0f0f0;
+}
+	
+} 
+@media (max-width: 768px){
+	.text-sv{
+		display: none;
+	}
+	.text-sv2 {
+		display: none;
+	}
+	.logomini {
+		display: block;
+	margin: 0 auto;	
+    padding-top: 20px;
+	}
+	.logo1{
+		display: none;
+	}
+	.phone-number {
+		display: none;
+	}
+	.tuvan {
+		display: none;
+	}
+	.form-search {
+		width: 65%;
+	}
+	.call i {
+		margin-top: 16px;
+	}
+	.seven-days {
+		display: none;
+	}
+	 .sp {
+	 	padding-bottom: none;
+	 }
+	 .text-menu{
+	 	display: none;
+	 }
+	 .top-right-banner  {
+	 	display: none;
+	 }
+	 .none-border {
+	border-right: 10px solid #f0f0f0;
+}
+
+}
